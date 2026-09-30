@@ -1,16 +1,46 @@
 {
-  "name": "agent-blackbox",
+  "name": "@khaib10/agent-blackbox",
   "version": "1.0.0",
   "description": "A flight recorder for AI agents: record every OpenAI-compatible chat turn, then list, show, replay, and audit for actions the model claimed but never took.",
   "type": "module",
-  "bin": { "agent-blackbox": "bin/agent-blackbox.js" },
+  "bin": {
+    "agent-blackbox": "bin/agent-blackbox.js"
+  },
   "main": "src/recorder.js",
-  "exports": { ".": "./src/recorder.js", "./audit": "./src/audit.js", "./store": "./src/store.js" },
-  "files": ["bin", "src", "README.md", "LICENSE"],
-  "engines": { "node": ">=18.17" },
-  "scripts": { "test": "node --test test/*.test.js" },
-  "keywords": ["llm", "agents", "observability", "tool-calling", "ollama", "openai", "debugging", "hallucination"],
-  "repository": { "type": "git", "url": "git+https://github.com/KhaiB10/agent-blackbox.git" },
+  "exports": {
+    ".": "./src/recorder.js",
+    "./audit": "./src/audit.js",
+    "./store": "./src/store.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "llm",
+    "agents",
+    "observability",
+    "tool-calling",
+    "ollama",
+    "openai",
+    "debugging",
+    "hallucination"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhaiB10/agent-blackbox.git"
+  },
   "author": "Khai Bustos",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
